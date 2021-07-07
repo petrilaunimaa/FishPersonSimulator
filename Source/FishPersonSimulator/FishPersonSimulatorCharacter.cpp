@@ -9,6 +9,7 @@
 #include "GameFramework/InputSettings.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Kismet/GameplayStatics.h"
+#include "Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -30,6 +31,9 @@ AFishPersonSimulatorCharacter::AFishPersonSimulatorCharacter()
 	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f)); // Position the camera
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;
 
+	// Running speeds
+	SwimmingSpeed = 400.f;
+	FastSwimmingSpeed = 800.f;
 }
 
 void AFishPersonSimulatorCharacter::BeginPlay()
@@ -46,9 +50,9 @@ void AFishPersonSimulatorCharacter::SetupPlayerInputComponent(class UInputCompon
 	// set up gameplay key bindings
 	check(PlayerInputComponent);
 
-	// Bind jump events
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	// Bind sprint events
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AFishPersonSimulatorCharacter::FastSwim);
+	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AFishPersonSimulatorCharacter::Swim);
 
 	// Bind movement events
 	PlayerInputComponent->BindAxis("MoveForward", this, &AFishPersonSimulatorCharacter::MoveForward);
@@ -61,6 +65,16 @@ void AFishPersonSimulatorCharacter::SetupPlayerInputComponent(class UInputCompon
 	PlayerInputComponent->BindAxis("TurnRate", this, &AFishPersonSimulatorCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AFishPersonSimulatorCharacter::LookUpAtRate);
+}
+
+void AFishPersonSimulatorCharacter::FastSwim()
+{
+	GetCharacterMovement()->MaxSwimSpeed = FastSwimmingSpeed;
+}
+
+void AFishPersonSimulatorCharacter::Swim()
+{
+	GetCharacterMovement()->MaxSwimSpeed = SwimmingSpeed;
 }
 
 void AFishPersonSimulatorCharacter::MoveForward(float Value)

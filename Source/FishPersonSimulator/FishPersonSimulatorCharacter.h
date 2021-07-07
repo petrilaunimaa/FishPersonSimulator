@@ -78,5 +78,16 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	UFUNCTION()
+		void FastSwim();
+
+	UFUNCTION()
+		void Swim();
+
+	UPROPERTY(EditAnywhere)
+		float SwimmingSpeed;
+
+	UPROPERTY(EditAnywhere)
+		float FastSwimmingSpeed;
 };
 
