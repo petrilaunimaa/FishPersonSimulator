@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FishPersonSimulator",
+			"Path": "O:\\UnrealProjects\\FishPersonSimulator\\Source\\FishPersonSimulator.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FishPersonSimulatorEditor",
+			"Path": "O:\\UnrealProjects\\FishPersonSimulator\\Source\\FishPersonSimulatorEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
