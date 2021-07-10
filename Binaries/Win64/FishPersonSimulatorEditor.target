@@ -104,22 +104,6 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/BlockoutToolsPlugin/Binaries/Win64/UnrealEditor-BlockoutToolsPlugin.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/BlockoutToolsPlugin/Binaries/Win64/UnrealEditor-BlockoutToolsPlugin.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/BlockoutToolsPlugin/Binaries/Win64/UnrealEditor-BlockoutToolsEditorPlugin.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/BlockoutToolsPlugin/Binaries/Win64/UnrealEditor-BlockoutToolsEditorPlugin.pdb",
-			"Type": "SymbolFile"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UnrealEditor-Paper2D.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2348,10 +2332,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/BlockoutToolsPlugin/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2807,10 +2787,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Editor/BlueprintMaterialTextureNodes/BlueprintMaterialTextureNodes.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/BlockoutToolsPlugin/BlockoutToolsPlugin.uplugin",
 			"Type": "UFS"
 		},
 		{

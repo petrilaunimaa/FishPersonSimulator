@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FishPersonSimulator.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{05F8B4F0-B541-41AA-856A-619F784E27AD}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FishPersonSimulator.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FishPersonSimulatorEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\README.md" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{5D4F6266-98F7-46E3-B290-6E8319C083B1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\FishPersonSimulator">
+      <UniqueIdentifier>{B8E1C122-CA94-4006-BAA9-DFB082AC76AB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FishPersonSimulator\FishPersonSimulator.Build.cs">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FishPersonSimulator\FishPersonSimulator.cpp">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FishPersonSimulator\FishPersonSimulator.h">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FishPersonSimulator\FishPersonSimulatorCharacter.cpp">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FishPersonSimulator\FishPersonSimulatorCharacter.h">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FishPersonSimulator\FishPersonSimulatorGameMode.cpp">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FishPersonSimulator\FishPersonSimulatorGameMode.h">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FishPersonSimulator\FishPersonSimulatorHUD.cpp">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FishPersonSimulator\FishPersonSimulatorHUD.h">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FishPersonSimulator\FishPersonSimulatorProjectile.cpp">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FishPersonSimulator\FishPersonSimulatorProjectile.h">
+      <Filter>Source\FishPersonSimulator</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

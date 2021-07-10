@@ -46,6 +46,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
 	FVector GunOffset;
 
+	/** Health */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	float health;
 
 protected:
 

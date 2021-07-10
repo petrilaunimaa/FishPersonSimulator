@@ -34,6 +34,9 @@ AFishPersonSimulatorCharacter::AFishPersonSimulatorCharacter()
 	// Running speeds
 	SwimmingSpeed = 400.f;
 	FastSwimmingSpeed = 800.f;
+
+	// Default health
+	health = 100.f;
 }
 
 void AFishPersonSimulatorCharacter::BeginPlay()
