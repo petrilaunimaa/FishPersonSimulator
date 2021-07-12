@@ -1,0 +1,9 @@
+First update (1.1) after Game Jam release (1.0): 
+
+- Improved shark AI
+- Improved navigability (added more signs)
+- Removed or moved clipping props
+- Fixed input mode after restarting level at end
+- Added more ending animations
+- Removed the mysterious cube
+- Other smaller changes
